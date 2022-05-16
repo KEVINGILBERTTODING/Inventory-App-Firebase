@@ -1,4 +1,4 @@
-# Inventory-App-Firebase sunflower: :blossom:
+# Inventory-App-Firebase :sunflower: :blossom:
 <h6> Version 1.1 Released date 2022-05-16</h6>
 
 <h4>Aplikasi Inventory barang untuk menyimpan data barang, seperti stok, harga jual, harga beli, dan nama barang. Menggunakan firebase realtime database.</h4>
