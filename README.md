@@ -7,4 +7,4 @@
 <h3>Tampilan aplikasi :sunflower: :blossom: </h3> 
 
 
-![Desktop - 1](https://user-images.githubusercontent.com/79959818/168624710-352da1ab-4338-4452-a7ac-dc6fda30384e.png)
+![Desktop - 1](https://user-images.githubusercontent.com/79959818/168700838-6e51bb0e-2113-4be7-8980-3092a5162bde.png)
