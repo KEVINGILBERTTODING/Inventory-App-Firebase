@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_Tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tambah Data"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/tbl_Keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="20dp"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_kdbrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kode Barang"
+        android:inputType="textCapCharacters"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/et_nmbrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Barang"
+        android:inputType="textCapSentences"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/et_satuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Satuan"
+        android:inputType="textCapSentences"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/et_hrgbeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Beli"
+        android:inputType="number"
+        android:padding="20dp" />
+    <EditText
+        android:id="@+id/et_hrgjual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Jual"
+        android:inputType="number"
+        android:padding="20dp" />
+    <EditText
+        android:id="@+id/et_stok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stok Barang"
+        android:inputType="number"
+        android:padding="20dp" />
+    <EditText
+        android:id="@+id/et_stokmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stok Min Barang"
+        android:inputType="number"
+        android:padding="20dp" />
+
+
+    <Button
+        android:id="@+id/tbl_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/main"
+        android:text="tambah" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

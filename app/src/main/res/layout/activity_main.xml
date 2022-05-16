@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@drawable/wave">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_16sdp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan data baru"
+                    android:fontFamily="@font/sfsem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_barr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@+id/tvTitle2"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/content3"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@drawable/content3"
+                    app:queryHint="Cari barang..."
+                    app:theme="@style/AppSearchView"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_minus58sdp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_kode">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfsem"
+                android:text="Daftar Barang"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcylrBarang"
+                android:padding="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/main"
+        app:hideOnScroll="true"
+        app:fabCradleMargin="@dimen/_7sdp"
+        app:fabCradleRoundedCornerRadius="@dimen/_5sdp"
+        app:fabAlignmentMode="end"
+        app:fabCradleVerticalOffset="@dimen/_10sdp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tbl_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white"
+        app:layout_anchor="@id/bottomAppBar"
+        app:backgroundTint="@color/yellow" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
