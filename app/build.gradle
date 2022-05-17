@@ -50,4 +50,8 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
 
     implementation 'com.github.florent37:arclayout:1.0.3'
+
+    // Dependencies for loading bar
+
+    implementation 'com.wang.avi:library:2.1.3'
 }
